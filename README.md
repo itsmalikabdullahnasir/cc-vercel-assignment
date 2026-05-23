@@ -7,7 +7,7 @@
 **University:** Bahria University, Islamabad
 
 ## Live Production URL
-https://my-lab8-app.vercel.app
+https://my-lab8-app-ochre.vercel.app/
 
 ## API Endpoints
 | Endpoint | Method | Description |
