@@ -1,0 +1,14 @@
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export function middleware(request: NextRequest) {
+  const res = NextResponse.next();
+  res.headers.set("x-lab", "Lab8-CloudComputing");
+  res.headers.set("x-student", "Abdullah-Nasir-01-131232-008");
+  console.log(`[EDGE] ${request.method} ${request.nextUrl.pathname}`);
+  return res;
+}
+
+export const config = {
+  matcher: ["/((?!_next/static|favicon.ico).*)"],
+};
